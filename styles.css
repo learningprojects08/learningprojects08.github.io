@@ -1,11 +1,12 @@
 /* 
 
-ultima modificacion: 25 de  agosto del 2022
+ultima modificacion: 07 de septiembre del 2022
 
 codigo transcrito y modificado por 
 Jhonatan Samuel Martinez Hernandez con motivos de aprendisaje 
 para la correcta visualisacion en dispositivos mobiles y 
 de escritorio 
+
 */
 
 
@@ -27,21 +28,18 @@ body{
     text-align:center;
     font-family: sans-serif;
 }
-
+/*
 .head{
     display: flex;
     width:100%;
     height: 63px;
-    background: black;
+    background: #0C0032;
     justify-content: space-between;
     position:fixed;
     align-items:center;
-    z-index:100;
-}
-
-.navbar{
-    display: flex;
-    margin-right:  10px;
+    
+    
+    
 }
 
 .logo{
@@ -55,21 +53,7 @@ body{
     font-size: 20px;
 
 }
-
-.navbar a {
-
-    display:block;
-    color: whitesmoke;
-    text-decoration: none;
-    padding:20px 20px;
-    font-size: 20px;
-    text-transform:uppercase;
-}
-
-.navbar a:hover{
-    background: #3f3f3f
-}
-
+*/
 .header {
     display: flex;
     justify-content: center;
@@ -80,9 +64,14 @@ body{
 
 .header{
     height: 80vh !important;
-    background: url(img/costos.jpg) no-repeat center;
+
+    background: #3500d3;;
+    
+    /*background: url(img/costos.jpg) no-repeat center;*/
     background-size: cover;
 }
+
+
 
 .title {
     margin-bottom: 20px;
@@ -107,14 +96,14 @@ p{
     display: inline-block;
     margin-top: 20px;
     padding: 10px 40px;
-    border: 2px solid #9c27b0;
+    border: 2px solid #0c0032;
     color: #ffff;
     text-decoration: none;
-    background: #9c27b0;
+    background: #0c0032;
 }
 
 .btn:hover{
-    background: none;
+    background: #0c003261;
 }
 
 .btn-home{
@@ -128,7 +117,7 @@ p{
 
 .content{
 
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction:column;
@@ -136,7 +125,7 @@ p{
     align-items: center;
 }
 
-.sau{
+.gameplay{
     
     background: #262626;
 }
@@ -154,7 +143,7 @@ p{
     height: 11rem;
     width:17rem;
     text-align: center;
-    background: #101010;
+    background: #282828;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0,0, 0, .5);
     margin: 2rem;
@@ -169,7 +158,8 @@ p{
     border-radius: 50%;
     color:#fff;
     text-align: center;
-    background:#9c27b0;
+    background: #3500d3;
+    
     font-size: 2 rem;
     margin: 1rem 0;
    
@@ -178,7 +168,7 @@ p{
 .box-container .box h3 {
 
     font-size: 20px;
-    color:#9c27b0;
+    color:#3500d3;
 }
 
 .box-container .box p {
@@ -192,25 +182,24 @@ p{
 }
 
 
-.price {
+.history {
     
-    background: url(img/costos.jpg);
-    background-attachment:fixed;
+    background: url(img/halo.jpg);
     background-size:cover;
     text-align:center;
 }    
 
-.contact{
+/*.contact{
 
     padding-top: 20px;
     background: #1e1e1e;
     margin-bottom: 0px;
-}
+}*/
 
 .map{
 
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     margin-bottom: 20px;
 
 }
@@ -218,6 +207,17 @@ p{
 .trailer{
 
     background: #101010;
+    
+}
+
+/*responsive Youtube i frame*/
+
+.video{
+    /*aspect-ratio: 16/9;
+    width: 100%;*/
+
+    width: 838px;
+    height: 470px;
 }
 
 @media (max-width:768px) {
@@ -228,14 +228,17 @@ p{
         font-size: 40px;
     }
 
-    .sau{
+    .gameplay{
         height: 150vh;
     }
-
-    .navbar{
-        display: none;
+/*Youtube i frame */
+    .video{
+        aspect-ratio: 16/9;
+        width: 100%;
+        height: 315px;
     }
     
+
 }
 
 

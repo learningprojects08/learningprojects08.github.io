@@ -7,19 +7,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>secund projet</title>
+
+
+    <link rel="stylesheet" href="navbar-styles.css">
+    <script
+    src="https://kit.fontawesome.com/7e5b2d153f.js"
+    crossorigin="anonymous">
+    </script>
+  <script defer src="index.js"></script>
+
+
 </head>
 <body>
 
     <div class="head">
-        <div class="logo">
-            <a href="">logo</a>  
-        </div>
-        <nav class="navbar">
-            <a href="">inicio</a>
-            <a href="">nosotros</a>
-            <a href="">contacto</a>
-            <a href="">productos</a>
-            <a href="">precios</a>
+        <nav class="nav">
+            <a href="#" class="logo nav-link">Logo</a>
+            <button class="nav-toggle" aria-label="abrir boton">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Inicio</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Gameplays</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Updates</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Music</a></li>
+            </ul>
         </nav>
     </div>
 
@@ -33,13 +46,15 @@
         </p>
 
         <div class ="btn-home">
-            <a href="" class="btn">Saber mas</a>
-            <a href="" class="btn">Saber mas</a>
+            <a href="" class="btn">Updates</a>
+            <a href="" class="btn">history</a>
         </div>   
     </header>
 
-    <section class="content sau">
-        <h2 class="title">productos</h2>
+    
+
+    <section class="content gameplay">
+        <h2 class="title">Gameplays</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
            Voluptatibus consectetur, totam nesciunt illo ratione, corporis
             necessitatibus saepe quam et beatae molestiae eligendi numquam as
@@ -48,19 +63,19 @@
         <div class="box-container">
             
             <div class="box">
-                <i class="fab fa-apple"></i>
+                <i class="fab fa-facebook"></i>
                 <h3>lorem</h3>
                 <p>pernatur vero maxime. Doloremque </p>
             </div>
 
             <div class="box">
-                <i class="fab fa-angular"></i>
+                <i class="fab fa-instagram"></i>
                 <h3>lorem</h3>
                 <p>pernatur ver maxime. Doloremque </p>
             </div>
 
             <div class="box">
-                <i class="fab fa-android"></i>
+                <i class="fab fa-twitter"></i>
                 <h3>lorem</h3>
                 <p>pernatur vero maxime. Doloremque </p>
             </div>
@@ -68,12 +83,18 @@
     </section>
 
     <section class="content trailer">
+        <iframe
+        class="video"
+        src="https://www.youtube.com/embed/j0GVq-ghtWw" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
         
-        <iframe width="440" height="315" src="https://www.youtube.com/embed/u7oRIRn3mc4?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <section class="content about">
-        <h2 class="title">Nosotros</h2>
+        <h2 class="title">wallpapers</h2>
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
              Explicabo beatae animi ipsam sit debitis iure eius dolore. 
@@ -85,9 +106,9 @@
 
     </section>
 
-    <section class="content price">
+    <section class="content history">
         <article class="contain">
-            <h2 class="title">Price</h2>
+            <h2 class="title">history</h2>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Explicabo beatae animi ipsam sit debitis iure eius dolore. 
@@ -100,15 +121,5 @@
         </article>
     </section>
 
-    <section class="content contact">
-
-        <h1 class="title">Contactanos</h1>
-        <p>1245678765432345678</p>
-        <img class ="map" src="img/mapa.png" alt="mapa img">
-    </section>
-   
-
-    
-    
 </body>
 </html>
