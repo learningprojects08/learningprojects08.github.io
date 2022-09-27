@@ -1,0 +1,89 @@
+/*This file was created 26 sptembet from 2022 at 23:07*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*------footer------*/
+
+.down-footer{
+    width:100%;
+    background-color: #0a141d;
+}
+
+.down-footer .grup-1{ 
+    width:100%;
+    max-width: 1200px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+.down-footer .grup-1 .logo{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.down-footer .grup-1 .box h2{
+    color:#fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.down-footer .grup-1 .box p{
+    color:#efefef;
+    margin-bottom: 10px;
+}
+
+.down-footer .grup-1 .social-media a{
+    display: inline-block;
+    text-decoration:none;
+    width:65px;
+    height:65px;
+    line-height: 65px;
+    color:#fff;
+    margin:10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 50%;
+}
+
+.down-footer .grup-1 .social-media a:hover{
+    color:aqua;
+    transform: scale(.9);
+}
+
+.down-footer .grup-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.down-footer .grup-2 .small{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px){
+    .down-footer .grup-1{
+        width: 90%;
+        grid-template-columns: repeat(1 ,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .down-footer .grup-1 .social-media a{
+        margin-bottom: 10px;
+    }
+}
