@@ -9,6 +9,9 @@ de escritorio
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
 
 
 
@@ -17,10 +20,8 @@ de escritorio
     padding:0;
     border:0;
     font-size: 100%;
-    vertical-align:baseline;
-
-    
-
+    vertical-align: baseline;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body{
@@ -184,7 +185,7 @@ p{
 
 .history {
     
-    background: url(img/halo.jpg);
+    background-color: #101010;
     background-size:cover;
     text-align:center;
 }    
