@@ -1,129 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>secund projet</title>
+    <title>Decoramor</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
 
-
-    <link rel="stylesheet" href="navbar-styles.css">
-    <script
-    src="https://kit.fontawesome.com/7e5b2d153f.js"
-    crossorigin="anonymous">
-    </script>
-  <script defer src="index.js"></script>
 
     <!--Footer Icons-->
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="footer-style.css">
-    <!----------------->
+    <link rel="stylesheet" href="css/footer-style.css">
 
 </head>
 <body>
 
-    <div class="head">
-        <nav class="nav">
-            <a href="#" class="logo nav-link">Logo</a>
-            <button class="nav-toggle" aria-label="abrir boton">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Inicio</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Gameplays</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Updates</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Music</a></li>
-            </ul>
-        </nav>
+<div class="container">
+
+
+    <h3 class="title">decoramor</h3>
+
+
+    <div class="catalogue">
+
+        <div class="product" data-name="p-1"> 
+            <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.01 AM.jpeg" style = "width: 100%;"alt="">
+            <h3>cabezote</h3>
+        <div class="price">270.000</div> 
+        </div>
+
+        <div class="product"  data-name="p-2"> 
+            <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.02 AM (1).jpeg" style = "width: 100%;"alt="">
+            <h3>cabezote</h3>
+            <div class="price">270.000</div>
+        </div>
+   
+        <div class="product"  data-name="p-3"> 
+            <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.02 AM (2).jpeg" style = "width: 300px;"alt="">
+            <h3>cabezote</h3>
+            <div class="price">270.000</div> 
+        </div>
+   
+        <div class="product"  data-name="p-4"> 
+            <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.02 AM.jpeg" style = "width: 100%;"alt="">
+            <h3>cabezote</h3>
+            <div class="price">270.000</div>
+        </div>
+   
+        <div class="product"  data-name="p-5"> 
+            <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.47 AM (1).jpeg" style = "width: 100%;"alt="">
+            <h3>cabezote</h3>
+            <div class="price">270.000</div> 
+        </div>
+   
+   
     </div>
-
-    <header class="content header">
-        <h2 class="title">Inicio</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Quam, tempora possimus cumque quaerat error incidunt et 
-             corporis quasi quod aspernatur optio ipsa facere atque al
-             ias, deserunt sint quis ab a?
-        </p>
-
-        <div class ="btn-home">
-            <a href="" class="btn">Updates</a>
-            <a href="" class="btn">history</a>
-        </div>   
-    </header>
-
+</div>
     
 
-    <section class="content gameplay">
-        <h2 class="title">Gameplays</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-           Voluptatibus consectetur, totam nesciunt illo ratione, corporis
-            necessitatibus saepe quam et beatae molestiae eligendi numquam as
-            pernatur vero maxime. Doloremque laborum et cupiditate.</p>
+<div class="products-preview active">
+    
+    <div class="preview" data-target="p-1">
+        <i class="fas fa-times"></i>
+        <img src="products/WhatsApp Image 2022-09-07 at 11.54.01 AM.jpeg" alt="cabezote">
+        <h3>cabezote</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eaque consectetur animi perferendis voluptatibus aliquid ea, minus voluptate numquam nesciunt molestiae dolorum tenetur voluptatum praesentium odio saepe omnis eveniet incidunt?</p>
+        <div class="price">270.000</div>
+    </div>
 
-        <div class="box-container">
-            
-            <div class="box">
-                <i class="fab fa-facebook"></i>
-                <h3>lorem</h3>
-                <p>pernatur vero maxime. Doloremque </p>
-            </div>
+    <div class="preview" data-target="p-2">
+        <i class="fas fa-times"></i>
+        <img src="products/WhatsApp Image 2022-09-07 at 11.54.47 AM (1).jpeg" alt="cabezote">
+        <h3>cabezote</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eaque consectetur animi perferendis voluptatibus aliquid ea, minus voluptate numquam nesciunt molestiae dolorum tenetur voluptatum praesentium odio saepe omnis eveniet incidunt?</p>
+        <div class="price">270.000</div> 
+    </div>
 
-            <div class="box">
-                <i class="fab fa-instagram"></i>
-                <h3>lorem</h3>
-                <p>pernatur ver maxime. Doloremque </p>
-            </div>
-
-            <div class="box">
-                <i class="fab fa-twitter"></i>
-                <h3>lorem</h3>
-                <p>pernatur vero maxime. Doloremque </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="content trailer">
-        <iframe
-        class="video"
-        src="https://www.youtube.com/embed/lLdzlLL33G8" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>
-        
-    </section>
-
-    <section class="content about">
-        <h2 class="title">wallpapers</h2>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-             Explicabo beatae animi ipsam sit debitis iure eius dolore. 
-             Sit distinctio quia ea delectus quos, vel eius recusandae,
-            placeat sequi error sunt.
-        </p>
-
-        <a href="" class="btn">Saber mas</a>
-
-    </section>
-
-    <section class="content history">
-        <article class="contain">
-            <h2 class="title">history</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Explicabo beatae animi ipsam sit debitis iure eius dolore. 
-                Sit distinctio quia ea delectus quos, vel eius recusandae,
-                placeat sequi error sunt.
-            </p>
-
-            <a href="" class="btn">Saber precios</a>
-
-        </article>
-    </section>
+</div>    
 
     <!--footer-->
     
@@ -155,10 +110,11 @@
         </div>
 
         <div class="grup-2">
-            <small>&copy; 2021 <b>Jhonatan Martinez</b>  - Todos los Derechos Reservados.</small>
+            <small>&copy; 2021 <b>Jhonatan Martinez &  Decoramor</b>  - Todos los Derechos Reservados.</small>
         </div>
 
     </footer>
-
+    
 </body>
+<script src="js/index.js" defer></script>
 </html>
