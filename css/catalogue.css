@@ -12,12 +12,10 @@ all my need for the webdite I'm doing*/
     text-decoration: none;
     transition: all .2s linear;
     text-transform: capitalize;
-}
-
-html{
-    font-size: 62.5%;
     overflow-x: hidden;
 }
+
+
 /*Modificar el font-size del container catalogue 
 de tal manera que no afecte a el resto de la pagina.
 
@@ -50,6 +48,7 @@ O user el font-size de el catalogue container por defecto
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
+    
 }
 
 /* cards styles for all products*/
@@ -61,12 +60,13 @@ O user el font-size de el catalogue container por defecto
     box-shadow: 0 .5rem 1rem rgba(0,0,0, .3);
     cursor:pointer;
     border-radius: 3%;
+
 }
 
 .container .catalogue .product img{
     height: 50rem;
     border-radius: 3%;
-
+    
 }
 
 .container .catalogue .product:hover img{
@@ -234,3 +234,7 @@ O user el font-size de el catalogue container por defecto
      }
  }
  /*Last edited 2th october 2022 at 3:44 pm*/
+
+  /*Last edited 21th october 2022 at 11:00 pm*/
+
+

@@ -3,7 +3,14 @@
     margin: 0;
     padding: 0;
     font-family:'Nunito', sans-serif;
+    transition: all .2s linear;
+
 }
+
+html{
+    font-size: 62.5%;
+}
+
 /**this code is from the catalogue index css */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400&display=swap');
 
@@ -27,8 +34,8 @@
 /*--------------------presentation-----------*/
 
 .presentacion{
-    padding-top: 7rem;
-    padding: 5rem;
+    padding-top: 12rem;
+    padding: 9rem;
     background-color: #09F;
     width: 100%;
     height: 75vh;
@@ -52,7 +59,7 @@
 --------------------------------------*/
 
 .presentacion .profile img {
-    width: 15rem;
+    width: 24rem;
     border-radius: 50%;
 }
 
@@ -61,18 +68,21 @@
     padding-bottom: 0;
 }
 
-h2{
+.presentacion h2{
     padding: 3rem 2rem;
-    font-size: 4rem;
+    font-size: 5rem;
     color: white;
 }
 
 .presentacion p {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
-    padding: 1rem;
+    padding: 5rem;
 }
 
+.some-info h1{
+    font-size: 3.5rem;
+}
 .some-info{
     text-align: center;
     justify-content:center;   
@@ -92,35 +102,45 @@ h2{
 
 
 @media screen and (max-width: 768px) {
-
+   
     .presentacion{
-        height: 162vh;
+        padding-top: 12rem;
+        padding: 7rem;
+        background-color: #09F;
+        
+        height: 90vh;
     }
 
     .presentacion .profile img{
-        width: 15rem;
+        width: 20rem;
+        text-align: center;
+    }
+
+    .presentacion h2{
+        padding: 3rem 2rem;
+        font-size: 7rem;
+        color: white;
     }
 
     .presentacion .profile{
-        display: inline-block;
+        display: block;
         padding-bottom: 0;
     }
     
     .presentacion .profile h2{
         padding: 3rem 0;
         font-size: 3rem;
-        justify-content: left;
+        justify-content: center;
     }
 
-    .presentacion p{
-        font-size: 1.8rem;
+    .presentacion p {
+        font-size: 2.8rem;
+        text-align: center;
+        padding: 3rem;
     }
-    
 
     .some-info{
-        height: 60vh;
-        
-        
+        height: 80vh;  
     }
     
 }

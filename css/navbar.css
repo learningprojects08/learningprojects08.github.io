@@ -1,73 +1,128 @@
-/* nav bar develop and adaptated for this page 
-I think jajajjajajaj*/
+/*navigacion bar for decoramor sas*/
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    
+
+
+.barra-de-navegacion{
+    background-color:  rgb(61, 192, 212);
+    height: 63px;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+}
+
+nav{
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav .logo{
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 63x;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    color: whitesmoke;
 }
 
 .main-menu{
-    list-style:none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left:0 ;
-
     display: flex;
-    flex-direction:column;
-    align-items: center;
-    background-color: #190061;
-    transition: transform 0.5s;
-    transform: translateY(-100%);
+    margin-right: 40px;
+    list-style: none;
 
 
 }
-
 .main-menu-link{
-
     text-decoration: none;
-    text-transform: uppercase;
-    list-style: none;
-    padding: 20px;
-    font-size: 20px;
-    color: white;
+    color: whitesmoke;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main-menu-link:hover{
+    background-color: #034574;
+    transition: 0.5s;
 }
 
 .main-menu-item{
+    font-size: 20px;
+    margin: 0 10px;
+    line-height: 63px;
+    text-transform: uppercase;
+    width: max-content;
 
-
-    padding: 1em;
 }
-
-
+/*
 .toggle-menu{
     position: absolute;
     width: 40px;
     top: 1rem;
-    right: 1.5rem;
+    right: 1,5rem;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}*/
+
+.toggle-menu{
+    
+    
+    border: none;
+    background: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 63px;
+    display:none;
     cursor: pointer;
     z-index: 1;
 }
 
-img{
-
-    max-width: 100%;
-}
 
 
-.main-menu--show{
+@media screen and (max-width: 768px){
 
-    transform: translateY(0);
-}
-
-@media screen and (min-width: 768px) {
-    .main-menu{
-        flex-direction: row;
-        transform: translateY(0);
-    }   
+    .barra-de-navegacion{
+        height: 63px;
+        width: 100%;
+    }
 
     .toggle-menu{
-        display: none;
+        display: block;
     }
+
+    .main-menu{
+        flex-direction: column;
+        background-color: rgb(138, 138, 138);
+        position: fixed;
+        left: 0;
+        top: 63px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+
+        height: calc(100% - 63px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .main-menu-item{
+        line-height: 70px
+    }
+
+    .main-menu-item:hover{
+        color: rgb(92, 83, 120);
+    }
+
+    .main-menu-link:hover{
+        background: none;
+        
+    }
+
+    .main-menu--show{
+        /*transform: translateY(0);*/
+        left: 0;
+    }
+
+    
 }
