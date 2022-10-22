@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decoramor</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    
+    <title>Main page</title>
+    <link rel="stylesheet" href="index.css">
 
+    <!--fontwasome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!--nav bar menu-->
+    <link rel="stylesheet" href="navbar.css">
+    <script src="navbar.js" defer></script>
+
+    <!--catalogue-->
+    <link rel="stylesheet" href="css/catalogue.css">
 
     <!--Footer Icons-->
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
@@ -17,68 +24,155 @@
 </head>
 <body>
 
-<div class="container">
+    <div class="hero">  <!--hero -->
+        <video muted loop autoplay>
+            <source src="video/video_1.mp4" type="video/mp4">
+
+            
+        </video>
+
+        <div class="barra-de-navegacion"> <!--barra de navegacion-->
+
+            <nav class="nav">
+
+                <a href="#" class="logo"> logo</a>
+                   
+                <button id="toggle-menu" class="toggle-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+    
+                <ul id="main-menu" class="main-menu">
+    
+                    <li class="main-menu-item">
+                        <a class="main-menu-link" href="https://www.aquacure.co.uk/knowledge-base/how-water-filters-work">Inicio</a>
+                    </li>
+    
+                    <li class="main-menu-item">
+                        <a class="main-menu-link" href="">productos</a>
+                    </li>
+    
+                    <li class="main-menu-item">
+                        <a class="main-menu-link" href="">informacion</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a class="main-menu-link" href="">contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div> <!--barra de navegacion-->
 
 
-    <h3 class="title">decoramor</h3>
+    </div> <!--hero -->
 
 
-    <div class="catalogue">
+    
+    <div class="presentacion">
 
-        <div class="product" data-name="p-1"> 
-            <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.01 AM.jpeg" style = "width: 100%;"alt="">
-            <h3>cabezote</h3>
-        <div class="price">270.000</div> 
+        <div class="profile">
+            <img src="images/profile-user-round-black-icon-symbol-hd-png-11639594326nxsyvfnkg9.png" alt="photo of the merchantis">
+            
+            <h2>Hola! Mi nombre es </h2>
+
         </div>
 
-        <div class="product"  data-name="p-2"> 
-            <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.02 AM (1).jpeg" style = "width: 100%;"alt="">
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Itaque odio incidunt nostrum beatae nisi sint, eos officiis?
+        Tempore harum, recusandae eaque nemo voluptatem enim consequatur
+        est temporibus alias. Nihil, ducimus?</p>
+    </div>
+
+    <div class="wave-container">
+        <!-- Your wave goes here... -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+
+            <path fill="#0099ff" 
+                  fill-opacity="1" 
+                  d="M0,224L80,186.7C160,149,320,75,480,64C640,53,800,107,960,112C1120,117,1280,75,1360,53.3L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+            </path>
+
+        </svg>
+      </div>
+
+    <div class="some-info">
+
+        <h1>what are they for?</h1>
+
+        <p>Water Filters remove unwanted impurities from 
+        water such as sediment, taste and odour, hardness 
+        and bacteria to result in better quality water. 
+        From producing better-tasting drinking water to 
+        more specialist applications such as brewing coffee 
+        and making crystal clear ice, we offer a huge range 
+        of filters and cartridges to solve any number of 
+        water-related issues.</p>
+
+    </div>
+
+    <!--this is for the catalogue section -->
+    <div class="container">
+
+
+        <h3 class="title">decoramor</h3>
+    
+    
+        <div class="catalogue">
+    
+            <div class="product" data-name="p-1"> 
+                <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.01 AM.jpeg" style = "width: 100%;"alt="">
+                <h3>cabezote</h3>
+            <div class="price">270.000</div> 
+            </div>
+    
+            <div class="product"  data-name="p-2"> 
+                <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.02 AM (1).jpeg" style = "width: 100%;"alt="">
+                <h3>cabezote</h3>
+                <div class="price">270.000</div>
+            </div>
+       
+            <div class="product"  data-name="p-3"> 
+                <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.02 AM (2).jpeg" style = "width: 300px;"alt="">
+                <h3>cabezote</h3>
+                <div class="price">270.000</div> 
+            </div>
+       
+            <div class="product"  data-name="p-4"> 
+                <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.02 AM.jpeg" style = "width: 100%;"alt="">
+                <h3>cabezote</h3>
+                <div class="price">270.000</div>
+            </div>
+       
+            <div class="product"  data-name="p-5"> 
+                <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.47 AM (1).jpeg" style = "width: 100%;"alt="">
+                <h3>cabezote</h3>
+                <div class="price">270.000</div> 
+            </div>
+       
+       
+        </div>
+    </div>
+
+    <div class="products-preview active">
+    
+        <div class="preview" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <img src="products/WhatsApp Image 2022-09-07 at 11.54.01 AM.jpeg" alt="cabezote">
             <h3>cabezote</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eaque consectetur animi perferendis voluptatibus aliquid ea, minus voluptate numquam nesciunt molestiae dolorum tenetur voluptatum praesentium odio saepe omnis eveniet incidunt?</p>
             <div class="price">270.000</div>
         </div>
-   
-        <div class="product"  data-name="p-3"> 
-            <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.02 AM (2).jpeg" style = "width: 300px;"alt="">
+    
+        <div class="preview" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <img src="products/WhatsApp Image 2022-09-07 at 11.54.47 AM (1).jpeg" alt="cabezote">
             <h3>cabezote</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eaque consectetur animi perferendis voluptatibus aliquid ea, minus voluptate numquam nesciunt molestiae dolorum tenetur voluptatum praesentium odio saepe omnis eveniet incidunt?</p>
             <div class="price">270.000</div> 
         </div>
-   
-        <div class="product"  data-name="p-4"> 
-            <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.02 AM.jpeg" style = "width: 100%;"alt="">
-            <h3>cabezote</h3>
-            <div class="price">270.000</div>
-        </div>
-   
-        <div class="product"  data-name="p-5"> 
-            <img class="card-img" src="products/WhatsApp Image 2022-09-07 at 11.54.47 AM (1).jpeg" style = "width: 100%;"alt="">
-            <h3>cabezote</h3>
-            <div class="price">270.000</div> 
-        </div>
-   
-   
-    </div>
-</div>
     
+    </div>  
 
-<div class="products-preview active">
-    
-    <div class="preview" data-target="p-1">
-        <i class="fas fa-times"></i>
-        <img src="products/WhatsApp Image 2022-09-07 at 11.54.01 AM.jpeg" alt="cabezote">
-        <h3>cabezote</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eaque consectetur animi perferendis voluptatibus aliquid ea, minus voluptate numquam nesciunt molestiae dolorum tenetur voluptatum praesentium odio saepe omnis eveniet incidunt?</p>
-        <div class="price">270.000</div>
-    </div>
-
-    <div class="preview" data-target="p-2">
-        <i class="fas fa-times"></i>
-        <img src="products/WhatsApp Image 2022-09-07 at 11.54.47 AM (1).jpeg" alt="cabezote">
-        <h3>cabezote</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eaque consectetur animi perferendis voluptatibus aliquid ea, minus voluptate numquam nesciunt molestiae dolorum tenetur voluptatum praesentium odio saepe omnis eveniet incidunt?</p>
-        <div class="price">270.000</div> 
-    </div>
-
-</div>    
 
     <!--footer-->
     
@@ -114,7 +208,6 @@
         </div>
 
     </footer>
-    
 </body>
-<script src="js/index.js" defer></script>
+<script src="js/catalogue.js" defer></script>
 </html>

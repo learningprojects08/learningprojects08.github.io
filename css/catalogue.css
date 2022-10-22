@@ -1,0 +1,236 @@
+/*this code is mine and it's  modifies to acomplish 
+all my need for the webdite I'm doing*/
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400&display=swap');
+*/
+.container{
+    font-family:'Nunito', sans-serif;
+    margin:0; padding:0 ;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+/*Modificar el font-size del container catalogue 
+de tal manera que no afecte a el resto de la pagina.
+
+O user el font-size de el catalogue container por defecto
+ en la pagina ya que este es responsive*/
+
+ .container{
+    background: #eee;
+    
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+
+}
+
+.container .title{
+    font-size:3.5rem;
+    color:#444;
+    margin-bottom:3rem;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+/* Css responsive grib code for the products */
+
+.container .catalogue {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+/* cards styles for all products*/
+
+.container .catalogue .product{
+    text-align: center;
+    padding:  3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .3);
+    cursor:pointer;
+    border-radius: 3%;
+}
+
+.container .catalogue .product img{
+    height: 50rem;
+    border-radius: 3%;
+
+}
+
+.container .catalogue .product:hover img{
+    transform: scale(.9);
+}
+
+.container .catalogue .product h3{
+    padding: 5rem 0;
+    font-size: 2rem;
+    color:#444;
+}
+
+
+.container .catalogue .product:hover h3{
+    color: #27ae27;
+}
+
+.container .catalogue .product .price{
+    font-size: 2rem;
+    color:#444;
+}
+
+/*-----------------------------------------------------*/
+
+/*products preview*/
+
+
+.products-preview{
+    position: fixed;
+    top:0; left:0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.6);
+    justify-content: center; 
+    /*Text aling and justify content doesn´t make any effect 
+    positioning the quick preview in the center.
+    So I have added some padding to the element in order to 
+    center it correctly*/
+    align-items: center;
+    padding: 0 25%;
+    display: none;
+ 
+}/*Now it has the correct visualization in desktop mode*/
+
+ .products-preview .preview{
+    padding: 2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin: 2rem;
+    width: 60rem;
+    
+ }
+/*
+ .products-preview.active{
+    display: inline-block;
+}*/
+
+ .products-preview .preview img{
+    height: 40rem;
+    width: 40rem;
+    border-radius: 3%;
+}
+/*---------correcta visualisacion*/
+.products-preview .preview .fa-times{
+    position: absolute;
+    top: 1rem; right: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    font-size: 4rem;
+}/*---------correcta visualisacion*/
+
+.products-preview .preview .fa-times:hover{
+    transform: rotate(90deg)
+}/*---------correcta visualisacion*/
+
+.products-preview .preview h3{
+    color:#444;
+    padding:.5rem 0;
+    font-size: 2.5rem;
+ }
+
+ .products-preview .preview p{
+    line-height: 1.5;
+    padding:1rem 0;
+    font-size: 1.6rem;
+    color:#777;
+ }
+
+ .products-preview .preview .price{
+    padding:1rem 0;
+    font-size: 2rem;
+    color:#27ae60;
+ }
+
+ /* Media queries for mobile phone visualization*/
+
+ @media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    .products-preview{
+       /* padding: 0rem 10rem;*/
+       padding: 0 15%;
+    }
+ }
+
+ @media (max-width: 768px){
+    .products-preview .preview img{
+        height: 50rem;
+    }
+
+    .products-preview{
+        /*padding: 10rem 10rem;*/
+        padding: 5% 10%;
+    }
+
+    .products-preview .preview{
+        padding: 2rem;
+        margin: 1rem;
+        width: 50rem;
+     }
+
+     .products-preview .preview img{
+        height: 40rem;
+     }
+ }
+
+ @media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    .products-preview {
+        padding: 4rem 0;
+    }
+
+    .products-preview .preview{
+        padding: 2rem;
+        margin: 1rem;
+        width: 50rem;
+     }
+
+     .products-preview .preview img{
+        height: 40rem;
+        width: 40rem;
+     }
+ }
+ @media (max-width: 400px){
+    html{
+        font-size: 50%;
+    }
+    .products-preview {
+        padding: 4rem 0;
+    }
+    .products-preview .preview{
+        padding: 2rem;
+        margin: 1rem;
+        width: 45rem;
+     }
+
+     .products-preview .preview img{
+        height: 40rem;
+        width: 35rem;
+
+     }
+ }
+ /*Last edited 2th october 2022 at 3:44 pm*/
