@@ -69,8 +69,12 @@ O user el font-size de el catalogue container por defecto
     
 }
 
-.container .catalogue .product:hover img{
+/*.container .catalogue .product:hover img{
     transform: scale(.9);
+}*/
+
+.container .catalogue .product:hover{
+    background-color:  #09F;
 }
 
 .container .catalogue .product h3{
@@ -81,7 +85,8 @@ O user el font-size de el catalogue container por defecto
 
 
 .container .catalogue .product:hover h3{
-    color: #27ae27;
+    /*color: #27ae27;*/
+    color: #ffffff;
 }
 
 .container .catalogue .product .price{

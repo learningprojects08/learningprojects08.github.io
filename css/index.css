@@ -80,8 +80,13 @@ html{
     padding: 5rem;
 }
 
+.some-info{
+    padding-top: 0px;
+}
+
 .some-info h1{
     font-size: 3.5rem;
+    
 }
 .some-info{
     text-align: center;
@@ -97,6 +102,34 @@ html{
     justify-content: center;
     font-size: 25px;
     padding: 5%;
+   }
+/*----------------- types of products-------------------------*/
+
+
+.wave-container svg{
+    margin: 0px;
+    padding:  0px;
+    object-fit: cover;
+
+}
+.types-of-products{
+    background-color: #09F;
+    text-align: center;
+    width: 100%;
+    height: 55vh;
+    justify-content: center;
+    padding: 5%;
+    }
+
+.types-of-products .title{
+    font-size: 3.5rem;
+}
+
+.types-of-products p{
+    font-size: 25px;
+    justify-content: center;
+    padding: 5%;
+
 }
 
 
