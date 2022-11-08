@@ -117,11 +117,12 @@ O user el font-size de el catalogue container por defecto
 }/*Now it has the correct visualization in desktop mode*/
 
  .products-preview .preview{
-    padding: 2rem;
+    padding: 3.3rem;
     text-align: center;
     background: #fff;
     position: relative;
     margin: 2rem;
+    margin-bottom: 7rem;
     width: 60rem;
     
  }
@@ -131,7 +132,7 @@ O user el font-size de el catalogue container por defecto
 }*/
 
  .products-preview .preview img{
-    height: 40rem;
+    height: 35rem;
     width: 40rem;
     border-radius: 3%;
 }
@@ -150,19 +151,20 @@ O user el font-size de el catalogue container por defecto
 
 .products-preview .preview h3{
     color:#444;
-    padding:.5rem 0;
-    font-size: 2.5rem;
+    padding: .5rem 0;
+    font-size: 3.5rem;
  }
 
  .products-preview .preview p{
     line-height: 1.5;
-    padding:1rem 0;
-    font-size: 1.6rem;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    font-weight: 600;
     color:#777;
  }
 
  .products-preview .preview .price{
-    padding:1rem 0;
+    padding: 1rem 0;
     font-size: 2rem;
     color:#27ae60;
  }
@@ -200,6 +202,7 @@ O user el font-size de el catalogue container por defecto
      }
  }
 
+ /*compatible with samsung s20 ultra  A51/71 */  
  @media (max-width: 450px){
     html{
         font-size: 50%;
@@ -209,8 +212,9 @@ O user el font-size de el catalogue container por defecto
     }
 
     .products-preview .preview{
-        padding: 2rem;
-        margin: 1rem;
+        padding: 3.3rem;
+        margin: 15rem 1rem;/*----Modified margin here for spacing quickviews */
+        margin-bottom: 15rem;
         width: 50rem;
      }
 
@@ -218,28 +222,77 @@ O user el font-size de el catalogue container por defecto
         height: 40rem;
         width: 40rem;
      }
+
+     .products-preview .preview p{
+        
+        padding: 2.3rem 0;
+        font-size: 2rem;
+
+     }
  }
+
+ /*compatible with iphone xr*/
  @media (max-width: 400px){
     html{
         font-size: 50%;
     }
     .products-preview {
-        padding: 4rem 0;
+        padding: 2rem 0;
     }
+
     .products-preview .preview{
-        padding: 2rem;
-        margin: 1rem;
-        width: 45rem;
+        padding: 2.5rem; /*----------*/
+        margin: 5rem  1rem; /*---------*/
+        margin-bottom: 10rem;
+        
+        width: 38rem;
      }
 
      .products-preview .preview img{
-        height: 40rem;
-        width: 35rem;
+        height: 35rem;
+        width: 28rem;
+     }
+
+     .products-preview .preview p{
+        
+        padding: 2rem 0;
+        font-size: 1.8rem;
+
+     }
+ }
+ /*compatible with samsung s9+*/
+ @media (max-width: 365px){
+    html{
+        font-size: 50%;
+    }
+    .products-preview {
+        padding: 2rem 0;
+    }
+
+    .products-preview .preview{
+        padding: 2.5rem; /*----------*/
+        margin: 5rem  1rem; /*---------*/
+        margin-bottom: 10rem;
+        
+        width: 38rem;
+     }
+
+     .products-preview .preview img{
+        height: 35rem;
+        width: 28rem;
+     }
+
+     .products-preview .preview p{
+        
+        padding: 2rem 0;
+        font-size: 1.8rem;
 
      }
  }
  /*Last edited 2th october 2022 at 3:44 pm*/
 
   /*Last edited 21th october 2022 at 11:00 pm*/
+
+  /*las edited 7th november 2022*/
 
 
